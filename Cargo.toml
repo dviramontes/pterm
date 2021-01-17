@@ -1,5 +1,5 @@
 [package]
-name = "ifkill"
+name = "pterm"
 version = "0.1.0"
 authors = ["dviramontes <dviramontes@gmail.com>"]
 edition = "2018"

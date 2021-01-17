@@ -12,7 +12,7 @@ fn main() {
     system.refresh_all();
 
     for (pid, proc) in system.get_processes() {
-        if re.is_match(&proc.name()) {            
+        if re.is_match(&proc.name()) {
             match proc.status() {
                 sysinfo::ProcessStatus::Run => {
                     signal::kill(Pid::from_raw(*pid), Signal::SIGTERM).unwrap();

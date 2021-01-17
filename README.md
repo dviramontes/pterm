@@ -1,7 +1,12 @@
-# `ifkill`
+# `pterm`
 
-> Kills a process by name when found. Think of it as a diet coke version of `pgrep Python | xargs kill -SIGTERM` 
+> Sends SIGTERM to a given process by name. Think of it as a diet coke version of `pgrep Python | xargs kill -SIGTERM` 
 
+### Usage
+
+```bash
+$ pterm <process_name>
+```
 ### Development
 
 - `cargo run <process_name>`
